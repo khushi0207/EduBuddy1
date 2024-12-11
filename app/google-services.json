@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "95078764743",
+    "project_id": "edubuddy-db",
+    "storage_bucket": "edubuddy-db.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95078764743:android:2fad16e00879d146052ee2",
+        "android_client_info": {
+          "package_name": "com.example.edubuddy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyoiPRUnGYYkNwzxh6yvjwY-rEefyujPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
