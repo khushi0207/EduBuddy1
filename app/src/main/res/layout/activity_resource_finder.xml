@@ -5,43 +5,55 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResourceFinderActivity">
-
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#6BE4D9"
+    tools:context="ResourceFinderActivity">
 
         <!-- Subject Input -->
         <EditText
             android:id="@+id/etSubject"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="65dp"
+            android:textSize="19dp"
+            android:layout_margin="25dp"
+            android:layout_marginBottom="8dp"
             android:hint="Enter Subject (e.g., Math, Science)"
-            android:layout_marginBottom="8dp" />
+            tools:ignore="MissingConstraints" />
 
         <!-- Difficulty Spinner -->
-        <Spinner
-            android:id="@+id/spinnerDifficulty"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp" />
 
-        <!-- Submit Button -->
-        <Button
-            android:id="@+id/btnFindResources"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Find Resources"
-            android:layout_marginBottom="16dp" />
+    <!-- Submit Button -->
 
-        <!-- RecyclerView for Resources -->
-        <androidx.recyclerview.widget.RecyclerView
+    <!-- RecyclerView for Resources -->
+
+    <Spinner
+        android:id="@+id/spinnerDifficulty"
+        android:layout_width="354dp"
+        android:layout_height="57dp"
+        android:background="#A5D6A7"
+        android:layout_margin="20dp"
+        android:textSize="19dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <Button
+        android:id="@+id/btnFindResources"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="19dp"
+        android:text="Find Resources"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewResources"
+            android:textSize="19dp"
             android:layout_width="match_parent"
+            android:layout_marginTop="225dp"
             android:layout_height="match_parent" />
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

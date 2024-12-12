@@ -7,10 +7,12 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.edubuddy.R
+import com.example.edubuddy.Resources
+
 
 data class Resource(val title: String, val description: String, val url: String)
 
-class ResourceAdapter(private val resourceList: List<Resource>) :
+class ResourceAdapter(private val resourceList: MutableList<Resources>) :
     RecyclerView.Adapter<ResourceAdapter.ResourceViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ResourceViewHolder {

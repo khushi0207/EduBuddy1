@@ -9,12 +9,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.edubuddy.Resources
 import com.google.firebase.database.*
+import com.example.edubuddy.R
 
 class ResourceFinderActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var resourceAdapter: ResourceAdapter
-    private val resourceList = mutableListOf<Resource>()
+    private val resourceList: MutableList<Resources> = mutableListOf()
     private lateinit var database: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -67,6 +68,7 @@ class ResourceFinderActivity : AppCompatActivity() {
                         resource.subject.equals(subject, ignoreCase = true) &&
                         resource.difficulty.equals(difficulty, ignoreCase = true)) {
                         resourceList.add(resource)
+
                     }
                 }
                 resourceAdapter.notifyDataSetChanged()

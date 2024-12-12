@@ -1,5 +1,6 @@
 package com.example.edubuddy
 
+import ResourceFinderActivity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -34,6 +35,7 @@ class MainActivity : ComponentActivity() {
             }
 
             btnFindResources.setOnClickListener {
+
                 startActivity(Intent(this, ResourceFinderActivity::class.java))
             }
         }

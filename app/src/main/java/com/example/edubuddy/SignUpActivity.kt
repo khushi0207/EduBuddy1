@@ -18,12 +18,11 @@ import com.google.firebase.ktx.Firebase
 class SignUpActivity : AppCompatActivity() {
 
 
-
     @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
-        auth = FirebaseAuth.getInstance()
+        // auth = FirebaseAuth.getInstance()
 
         val etName = findViewById<EditText>(R.id.FullName)
         val etEmail = findViewById<EditText>(R.id.Email)
@@ -35,16 +34,18 @@ class SignUpActivity : AppCompatActivity() {
             val password = etPassword.text.toString()
 
             if (email.isNotEmpty() && password.isNotEmpty()) {
-                auth.createUserWithEmailAndPassword(email, password)
-                    .addOnCompleteListener { task ->
-                        if (task.isSuccessful) {
-                            Toast.makeText(this, "Registration Successful", Toast.LENGTH_SHORT).show()
-                        } else {
-                            Toast.makeText(this, "Error: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
-                        }
-                    }
-            } else {
+                /***   auth.createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                Toast.makeText(this, "Registration Successful", Toast.LENGTH_SHORT).show()
+                } else {
+                Toast.makeText(this, "Error: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
+                }
+                }
+                } else {
                 Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
+                }
+                 ***/
             }
         }
     }
