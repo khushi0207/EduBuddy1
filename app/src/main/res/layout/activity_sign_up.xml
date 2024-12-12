@@ -8,18 +8,20 @@
     android:background="@drawable/register"
     android:layout_height="match_parent">
 
-    
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:orientation="vertical">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/sign_up"
-            android:textSize="100sp"
+            android:textSize="55sp"
             android:textStyle="italic|bold"
             android:textAlignment="center"
             android:textColor="#1A3064"
             android:fontFamily="cursive"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             />
 
         <!-- Full Name -->
@@ -28,9 +30,10 @@
             android:textStyle="italic|bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autofillHints="@string/Full Name"
+            android:autofillHints="Full Name"
+            android:text="Full name:"
             android:inputType="textPersonName"
-            android:layout_margin="20dp"
+            android:layout_margin="8dp"
             android:padding="12dp" />
 
         <!-- Email -->
@@ -39,10 +42,11 @@
             android:textStyle="italic|bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autofillHints="@string/Email"
+            android:autofillHints="Email"
             android:inputType="textEmailAddress"
             android:padding="12dp"
-            android:layout_margin="20dp"
+            android:text="Email Id:"
+            android:layout_margin="8dp"
             android:layout_marginTop="8dp" />
 
         <!-- Password -->
@@ -51,10 +55,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="italic|bold"
-            android:autofillHints="@string/Password"
-            android:inputType="textPassword"
+            android:inputType="text"
             android:padding="12dp"
-            android:layout_margin="20dp"
+            android:text="Password:"
+            android:layout_margin="8dp"
             android:layout_marginTop="8dp" />
 
         <!-- Confirm Password -->
@@ -62,41 +66,42 @@
             android:id="@+id/ConfirmPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textStyle="italic|bold"
-            android:autofillHints="@string/Confirm Password"
-            android:inputType="textPassword"
+
+            android:autofillHints="Confirm Password"
+            android:inputType="text"
             android:padding="12dp"
-            android:layout_margin="20dp"
-            android:layout_marginTop="8dp" />
+            android:text="Confirm Password:"
+            android:textStyle="italic|bold" />
 
         <!-- Phone Number -->
         <EditText
             android:id="@+id/PhoneNumber"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="italic|bold"
-            android:hint="Phone Number"
+            android:layout_height="73dp"
             android:layout_margin="20dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Phone Number"
             android:inputType="phone"
-            android:padding="12dp"
-            android:layout_marginTop="8dp" />
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold" />
 
-        <!-- Gender -->
+
         <DatePicker
             android:id="@+id/dateBirth"
             android:layout_width="wrap_content"
             android:layout_height="246dp"
-            android:layout_margin="25dp"
+            android:layout_margin="20dp"
             android:padding="2dp" />
         <!-- Submit Button -->
         <Button
             android:id="@+id/btnRegister"
             android:layout_width="167dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_margin="20dp"
             android:layout_marginTop="16dp"
-
             android:padding="15dp"
             android:text="Register"
             android:fontFamily="sans-serif-light"
@@ -106,4 +111,6 @@
             android:background="#049081"
             android:textStyle="bold" />
 
+
+</LinearLayout>
 </ScrollView>

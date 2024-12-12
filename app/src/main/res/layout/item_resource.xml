@@ -4,38 +4,49 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:padding="8dp"
-    android:background="@color/teal_200"
+    android:background="#A4DAE0"
     android:layout_marginBottom="8dp"
     android:layout_height="match_parent">
 
 
-        <TextView
-            android:id="@+id/tvResourceTitle"
-            android:layout_width="381dp"
-            android:layout_height="39dp"
-            android:layout_marginBottom="4dp"
-            android:text="Resource Title"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/tvResourceTitle"
+        android:layout_width="402dp"
+        android:layout_height="58dp"
+        android:fontFamily="cursive"
+        android:text="Resource Title"
+
+        android:textAlignment="center"
+        android:textSize="40sp"
+
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <TextView
         android:id="@+id/tvResourceDescription"
-        android:layout_width="318dp"
-        android:layout_height="32dp"
-        android:text="Resource Description"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="58dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_width="358dp"
+        android:layout_height="55dp"
+        android:background="#C0C1F49A"
+        android:text=" Resource Description"
+        android:textColor="#01021A"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="105dp" />
 
     <Button
         android:id="@+id/btnOpenResource"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="192dp"
+        android:layout_height="55dp"
+        android:background="#EFE5B1"
+        android:fontFamily="monospace"
         android:text="Open Resource"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="105dp"
-        tools:ignore="MissingConstraints" />
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="173dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
